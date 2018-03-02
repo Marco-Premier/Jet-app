@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- toolbar -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <!-- bus icons -->
+    <dimen name="icons_height">70dp</dimen>
+    <dimen name="icons_width">70dp</dimen>
+    <!-- font -->
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_big">18sp</dimen>
+    <dimen name="font_x_big">24sp</dimen>
+    <!-- margins -->
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_big">16dp</dimen>
+    <!-- paddings -->
+    <dimen name="padding_normal">12dp</dimen>
+    <!-- progress bar -->
+    <dimen name="pb_defdault_size">40dp</dimen>
+    <!-- route details view -->
+    <dimen name="rdv_route_icon_width">80dp</dimen>
+    <dimen name="rdv_route_icon_height">80dp</dimen>
+    <dimen name="rdv_accessible_icon_width">50dp</dimen>
+    <dimen name="rdv_accessible_icon_height">50dp</dimen>
+    <!-- Bus stop adapter -->
+    <dimen name="bsa_dot_size">27dp</dimen>
+</resources>

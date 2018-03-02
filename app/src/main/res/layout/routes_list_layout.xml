@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvRoutesList"
+        style="@style/rvDefaultStyle"
+        android:layout_below="@+id/toolbar" />
+    
+    <ProgressBar
+        android:id="@+id/pbLoader"
+        android:layout_width="@dimen/pb_defdault_size"
+        android:layout_height="@dimen/pb_defdault_size"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvInternetError"
+        android:layout_centerInParent="true"
+        android:text="@string/rlc_internet_error"
+        android:visibility="gone"
+        android:textAlignment="center"
+        style="@style/tvSubTitleStyle"/>
+
+    <TextView
+        android:id="@+id/tvEmptyList"
+        android:layout_centerInParent="true"
+        android:text="@string/rlc_empty_list"
+        android:visibility="gone"
+        android:textAlignment="center"
+        style="@style/tvSubTitleStyle"/>
+
+</RelativeLayout>

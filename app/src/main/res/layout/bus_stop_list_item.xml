@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlWrapperItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal">
+
+    <ImageView
+        android:id="@+id/ivStopIcon"
+        android:layout_width="@dimen/bsa_dot_size"
+        android:layout_height="@dimen/bsa_dot_size"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/dot"/>
+
+    <TextView
+        android:id="@+id/tvStopName"
+        android:layout_toRightOf="@+id/ivStopIcon"
+        android:layout_centerVertical="true"
+        style="@style/tvSubTitleStyle"
+        android:layout_marginLeft="@dimen/margin_big"/>
+
+</RelativeLayout>

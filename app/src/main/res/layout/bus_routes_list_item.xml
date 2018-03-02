@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlWrapperItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_5"
+    android:padding="@dimen/padding_normal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ivRouteIcon"
+        android:layout_width="@dimen/icons_width"
+        android:layout_height="@dimen/icons_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        app:civ_fill_color="@android:color/white"/>
+    
+    <TextView
+        android:id="@+id/tvRouteName"
+        android:layout_toRightOf="@+id/ivRouteIcon"
+        android:layout_toLeftOf="@+id/ivAccessibleIcon"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_centerVertical="true"
+        style="@style/tvTitleStyle"/>
+
+    <TextView
+        android:id="@+id/tvRouteDescription"
+        style="@style/tvDefaultStyle"
+        android:layout_below="@+id/tvRouteName"
+        android:layout_toRightOf="@+id/ivRouteIcon"
+        android:layout_toLeftOf="@+id/ivAccessibleIcon"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/ivAccessibleIcon"
+        android:layout_width="@dimen/rdv_accessible_icon_width"
+        android:layout_height="@dimen/rdv_accessible_icon_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/accessible_icon"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:visibility="gone"/>
+
+</RelativeLayout>
